@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:orientation="vertical"
+    android:background="@color/Background">
+
+    <!-- Tanggal Pengerjaan : Selasa, 27 April 2021
+         Nim : 10118069
+         Deskripsi : membuat halaman register, tekan button register untuk menuju halaman
+         Almost There
+         Nama: Muhamad Rizqi Ramdani
+         Kelas : IF-2-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_header"
+            android:scaleType="fitXY">
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_header_back"
+            android:paddingLeft="20dp">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="90dp">
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/shadow_header">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/username"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/email"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/nohp"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/font_desc"
+                android:textSize="18dp"
+                android:checked="true"/>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"/>
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="18dp"
+                android:textColor="@color/font_desc"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+        <Spinner
+            android:id="@+id/spiner1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Blood Type"
+            android:entries="@array/blood_type"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp">
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spiner2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Reshus"
+            android:entries="@array/reshus"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/password"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/repass"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:textSize="18dp"
+                android:textColor="@color/font_desc"/>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"/>
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Organization"
+                android:textSize="18dp"
+                android:textColor="@color/font_desc"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+        <Spinner
+            android:id="@+id/spiner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Job"
+            android:entries="@array/job"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/home"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/location"
+            android:backgroundTint="@color/separator"
+            android:textColor="@color/font_desc"
+            android:drawableRight="@mipmap/ic_blood_needed_location"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="@string/terms"
+            android:textColor="@color/font_desc"
+            android:checked="true">
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_reg"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:text="@string/regist"
+            android:textColor="@color/light_blue"
+            android:textSize="15dp"
+            android:onClick="AlmostThere">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+</LinearLayout>

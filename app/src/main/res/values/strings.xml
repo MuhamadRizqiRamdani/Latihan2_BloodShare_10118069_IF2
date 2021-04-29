@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Latihan2_BloodShare</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="facebook">CONNECT WITH FACEBOOK</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="nohp">Phone Number</string>
+    <string name="repass">Retype Password</string>
+    <string name="home">Home Address</string>
+    <string name="location">Default Location</string>
+    <string name="terms">Agree with Terms and Conditions</string>
+    <string name="regist">REGISTER</string>
+    <string name="almost">Almost There</string>
+    <string name="thank">Thank you for registering with us. One more</string>
+    <string name="step">step, you need to check your email</string>
+    <string name="active">to active your account</string>
+    <string name="verif">VERIFY</string>
+    <string name="verifacc">Verify your Account</string>
+    <string name="sendverif">We have send verification code to your email</string>
+    <string name="code">enter verification code here...</string>
+    <string name="send">SEND</string>
+    <string name="resend">Resend</string>
+    <string name="nama">Muhamad Rizqi Ramdani</string>
+    <string name="blood">Blood type : A</string>
+    <string name="blood_give">BLOOD GIVE</string>
+    <string name="blood_rc">BLOOD RECEIVED</string>
+    <string name="thanks">THANKS</string>
+
+    <string-array name="blood_type">
+        <item>Blood Type</item>
+    </string-array>
+    <string-array name="reshus">
+        <item>Reshus</item>
+    </string-array>
+    <string-array name="job">
+        <item>Job</item>
+    </string-array>
+</resources>
